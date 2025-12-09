@@ -1,0 +1,1400 @@
+/* ===================================
+   RESPONSIVE FIXES FOR ELECTRO TEMPLATE
+   =================================== */
+
+/* ===================================
+   GENERAL FIXES FOR ALL DEVICES
+   =================================== */
+
+/* Back to Top Button - Better positioning on mobile */
+.back-to-top {
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+/* Better button spacing */
+.btn {
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+/* Carousel Navigation - Better mobile positioning */
+.header-carousel.owl-carousel .owl-nav .owl-prev,
+.header-carousel.owl-carousel .owl-nav .owl-next {
+    width: 40px;
+    height: 40px;
+}
+
+.header-carousel.owl-carousel .owl-nav .owl-prev {
+    right: 100px;
+}
+
+.header-carousel.owl-carousel .owl-nav .owl-next {
+    right: 40px;
+}
+
+/* Carousel Banner - Better responsive overlay */
+.carousel .carousel-banner {
+    padding: 20px;
+}
+
+.carousel .carousel-banner-offer {
+    top: 15px;
+    left: 15px;
+    flex-wrap: wrap;
+}
+
+.carousel .carousel-banner-offer p {
+    margin: 5px;
+}
+
+/* Product Item - Better hover states on mobile */
+.product .product-item .product-item-add {
+    transition: all 0.3s ease;
+}
+
+/* Products Mini - Better alignment */
+.products .products-mini .products-mini-item .products-mini-add {
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+/* ProductList Carousel - Better navigation */
+.productList .productList-carousel .owl-nav .owl-prev,
+.productList .productList-carousel .owl-nav .owl-next {
+    padding: 5px 20px;
+    font-size: 14px;
+}
+
+/* Related Product - Better carousel navigation */
+.related-product .owl-nav .owl-prev,
+.related-product .owl-nav .owl-next {
+    padding: 5px 20px;
+    font-size: 14px;
+}
+
+/* Footer - Better spacing */
+.footer .footer-item a {
+    line-height: 35px;
+}
+
+/* Mobile First Approach - Extra Small Devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /* Back to Top - Mobile */
+    .back-to-top {
+        right: 15px;
+        bottom: 15px;
+        width: 35px;
+        height: 35px;
+    }
+    
+    /* Buttons - Full width on mobile when needed */
+    .btn-lg-square {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .btn-md-square {
+        width: 38px;
+        height: 38px;
+    }
+    
+    .btn-sm-square {
+        width: 30px;
+        height: 30px;
+    }
+    
+    /* Navbar Categories */
+    .nav-bar .categories-bars .categories-bars-item {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    
+    .nav-bar .navbar .navbar-nav .nav-link {
+        padding: 12px 10px;
+        font-size: 15px;
+    }
+    
+    /* Carousel Header - Mobile optimization */
+    .header-carousel.owl-carousel .owl-nav .owl-prev,
+    .header-carousel.owl-carousel .owl-nav .owl-next {
+        width: 35px;
+        height: 35px;
+        top: 85%;
+        font-size: 14px;
+    }
+    
+    .header-carousel.owl-carousel .owl-nav .owl-prev {
+        right: 70px;
+    }
+    
+    .header-carousel.owl-carousel .owl-nav .owl-next {
+        right: 20px;
+    }
+    
+    /* Carousel Banner */
+    .carousel .carousel-banner {
+        padding: 15px;
+    }
+    
+    .carousel .carousel-banner-offer {
+        top: 10px;
+        left: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .carousel .carousel-banner-offer p {
+        font-size: 12px;
+        padding: 5px 10px !important;
+        margin-bottom: 5px;
+    }
+    
+    .carousel .carousel-banner a {
+        font-size: 14px;
+    }
+    
+    .carousel .carousel-banner del {
+        font-size: 14px;
+    }
+    
+    .carousel .carousel-banner span {
+        font-size: 16px;
+    }
+    
+    /* Product Items - Mobile */
+    .product .product-item .product-item-inner .product-item-inner-item .product-new,
+    .product .product-item .product-item-inner .product-item-inner-item .product-sale {
+        width: 45px;
+        height: 45px;
+        top: 10px;
+        right: 10px;
+        font-size: 12px;
+    }
+    
+    .product .product-item .product-item-inner .product-item-inner-item .product-details a i {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+    
+    .product .product-item:hover .product-item-add {
+        margin-bottom: -100px;
+    }
+    
+    .product .product-item .product-item-add .btn {
+        padding: 8px 15px !important;
+        font-size: 13px;
+    }
+    
+    .product .product-item .product-item-add .d-flex {
+        justify-content: center;
+        margin-top: 8px;
+    }
+    
+    /* Product Tabs - Mobile */
+    .product .tab-class .nav .nav-item a {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+    
+    /* ProductList Carousel - Mobile */
+    .productList .productList-carousel {
+        height: auto !important;
+    }
+    
+    .productList .productList-carousel .productImg-carousel.productList-item .productImg-item {
+        margin-bottom: 85px;
+    }
+    
+    .productList .productList-carousel .owl-nav .owl-prev,
+    .productList .productList-carousel .owl-nav .owl-next {
+        position: relative;
+        top: 0;
+        margin: 10px 5px;
+        padding: 8px 20px;
+        font-size: 13px;
+    }
+    
+    .productList .productList-carousel .owl-nav {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    /* Products Mini - Mobile optimization */
+    .products .products-mini .products-mini-item .products-mini-img {
+        min-height: 120px;
+    }
+    
+    .products .products-mini .products-mini-item .products-mini-img img {
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .products .products-mini .products-mini-item .products-mini-img .products-mini-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .products .products-mini .products-mini-item .products-mini-img .products-mini-icon i {
+        font-size: 14px;
+    }
+    
+    .products .products-mini .products-mini-item:hover .products-mini-add {
+        margin-bottom: -85px;
+    }
+    
+    .products .products-mini .products-mini-add .btn {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 8px 15px !important;
+        font-size: 13px;
+    }
+    
+    .products .products-mini .products-mini-add .d-flex {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    /* Pagination - Mobile */
+    .pagination {
+        text-align: center;
+    }
+    
+    .pagination a {
+        padding: 8px 12px;
+        font-size: 13px;
+        margin: 0 2px;
+    }
+    
+    /* Shop Page - Mobile */
+    .shop .product-categories .categories-item,
+    .shop .product-color .product-color-item,
+    .shop .price,
+    .shop .additional-product .additional-product-item {
+        padding: 8px 0;
+        font-size: 14px;
+    }
+    
+    .shop .featured-product .featured-product-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .shop .product-tags .product-tags-items a {
+        padding: 5px 10px;
+        margin: 3px;
+        font-size: 12px;
+    }
+    
+    /* Single Product - Mobile */
+    .single-product .owl-nav .owl-prev,
+    .single-product .owl-nav .owl-next {
+        font-size: 18px;
+        margin-top: -20%;
+    }
+    
+    .single-product .single-carousel .owl-dots {
+        height: auto;
+        flex-wrap: wrap;
+    }
+    
+    .single-product .single-carousel .owl-dots .owl-dot img {
+        width: 45px;
+        height: 45px;
+        margin: 5px;
+    }
+    
+    .single-product .single-carousel .owl-dots .owl-dot.active img {
+        width: 55px;
+        height: 55px;
+        border: 3px solid var(--bs-secondary);
+    }
+    
+    /* Related Product - Mobile */
+    .related-product .related-carousel .related-item {
+        margin-bottom: 100px;
+    }
+    
+    .related-product .related-carousel .related-item .related-item-inner .related-item-inner-item .related-new,
+    .related-product .related-carousel .related-item .related-item-inner .related-item-inner-item .related-sale {
+        width: 45px;
+        height: 45px;
+        top: 10px;
+        right: 10px;
+        font-size: 12px;
+    }
+    
+    .related-product .related-carousel .related-item:hover .related-item-add {
+        margin-bottom: -100px;
+    }
+    
+    .related-product .owl-nav .owl-prev,
+    .related-product .owl-nav .owl-next {
+        position: relative;
+        top: 0;
+        margin: 10px 5px;
+        padding: 8px 20px;
+        font-size: 13px;
+    }
+    
+    .related-product .owl-nav {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    /* Footer - Mobile */
+    .footer .footer-item {
+        margin-bottom: 30px;
+    }
+    
+    .footer .footer-item h4 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    
+    .footer .footer-item a,
+    .footer .footer-item p {
+        font-size: 13px;
+        line-height: 28px;
+    }
+    
+    .footer .rounded-circle[style*="width: 70px"] {
+        width: 50px !important;
+        height: 50px !important;
+    }
+    
+    .footer .rounded-circle i.fa-2x {
+        font-size: 1.3rem !important;
+    }
+    
+    .footer .position-relative input {
+        padding: 12px 15px !important;
+        font-size: 13px;
+    }
+    
+    .footer .position-relative button {
+        padding: 8px 15px !important;
+        font-size: 12px;
+    }
+    
+    /* Copyright - Mobile */
+    .copyright {
+        text-align: center !important;
+    }
+    
+    .copyright .row > div {
+        margin-bottom: 10px;
+    }
+    
+    .copyright span,
+    .copyright a {
+        font-size: 12px;
+    }
+    /* Topbar Search */
+    .container-fluid.px-5.py-4 .position-relative .d-flex {
+        flex-direction: column;
+    }
+    
+    .container-fluid.px-5.py-4 .position-relative .form-control {
+        border-radius: 25px !important;
+        margin-bottom: 10px;
+    }
+    
+    .container-fluid.px-5.py-4 .position-relative .form-select {
+        width: 100% !important;
+        border-radius: 25px !important;
+        margin-bottom: 10px;
+    }
+    
+    .container-fluid.px-5.py-4 .position-relative .btn {
+        width: 100%;
+        border-radius: 25px !important;
+    }
+    
+    /* Header Icons */
+    .col-md-4.col-lg-3.text-center.text-lg-end .d-inline-flex {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    /* Carousel */
+    .carousel-content h4 {
+        font-size: 14px !important;
+        letter-spacing: 1px !important;
+    }
+    
+    .carousel-content h1 {
+        font-size: 24px !important;
+    }
+    
+    .carousel-content .btn {
+        padding: 10px 20px !important;
+        font-size: 14px;
+    }
+    
+    /* Carousel Banner */
+    .carousel-header-banner {
+        margin-top: 20px;
+    }
+    
+    .carousel-banner-content a {
+        font-size: 14px !important;
+    }
+    
+    /* Services Section */
+    .container-fluid.px-0 .col-6 {
+        min-height: 120px;
+    }
+    
+    .container-fluid.px-0 .col-6 .p-4 {
+        padding: 15px !important;
+    }
+    
+    .container-fluid.px-0 h6 {
+        font-size: 12px;
+    }
+    
+    .container-fluid.px-0 p {
+        font-size: 10px;
+    }
+    
+    .container-fluid.px-0 i.fa-2x {
+        font-size: 1.5rem !important;
+    }
+    
+    /* Products Offer */
+    .container-fluid.bg-light .d-flex {
+        flex-direction: column;
+        text-align: center !important;
+    }
+    
+    .container-fluid.bg-light .d-flex img {
+        margin-top: 15px;
+        max-width: 150px;
+    }
+    
+    .container-fluid.bg-light h3 {
+        font-size: 18px;
+    }
+    
+    .container-fluid.bg-light h1 {
+        font-size: 32px !important;
+    }
+    
+    /* Product Tabs */
+    .nav-pills {
+        flex-direction: column !important;
+        width: 100%;
+    }
+    
+    .nav-pills .nav-item {
+        width: 100%;
+        margin: 0 0 10px 0 !important;
+    }
+    
+    .nav-pills .nav-link {
+        width: 100% !important;
+        justify-content: center !important;
+    }
+    
+    /* Product Items */
+    .product-item-inner-item img {
+        height: 200px;
+        object-fit: contain;
+    }
+    
+    .product-item .h4 {
+        font-size: 16px;
+    }
+    
+    .product-item del,
+    .product-item span {
+        font-size: 14px !important;
+    }
+    
+    /* Product Banner - Enhanced */
+    .container-fluid.py-5 .position-relative {
+        min-height: 250px;
+    }
+    
+    .container-fluid.py-5 .position-absolute {
+        padding: 20px !important;
+    }
+    
+    .container-fluid.py-5 .display-5 {
+        font-size: 20px !important;
+        line-height: 1.3;
+    }
+    
+    .container-fluid.py-5 .display-2 {
+        font-size: 32px !important;
+        line-height: 1.2;
+    }
+    
+    .container-fluid.py-5 .fs-4 {
+        font-size: 18px !important;
+    }
+    
+    .container-fluid.py-5 .btn {
+        padding: 10px 25px !important;
+        font-size: 14px !important;
+    }
+    
+    /* Make banner images maintain aspect ratio */
+    .container-fluid.py-5 img {
+        min-height: 250px;
+        object-fit: cover;
+    }
+    
+    /* Products Mini Items */
+    .products-mini-item .col-5 {
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+    
+    .products-mini-item .col-7 {
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+    
+    .products-mini-content .h4 {
+        font-size: 14px;
+    }
+    
+    .products-mini-content del,
+    .products-mini-content span {
+        font-size: 13px !important;
+    }
+    
+    .products-mini-add {
+        flex-direction: column;
+        align-items: center !important;
+        gap: 10px;
+    }
+    
+    .products-mini-add .btn {
+        width: 100%;
+        padding: 8px 15px !important;
+        font-size: 13px;
+    }
+    
+    /* Footer */
+    .footer-item h4 {
+        font-size: 18px;
+    }
+    
+    .footer-item a,
+    .footer-item p {
+        font-size: 13px;
+    }
+    
+    .rounded-circle[style*="width: 70px"] {
+        width: 50px !important;
+        height: 50px !important;
+    }
+    
+    .rounded-circle i.fa-2x {
+        font-size: 1.3rem !important;
+    }
+}
+
+/* Small Devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* Back to Top */
+    .back-to-top {
+        right: 20px;
+        bottom: 20px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    /* Navbar */
+    .nav-bar .navbar .navbar-nav .nav-link {
+        padding: 12px 12px;
+        font-size: 16px;
+    }
+    
+    /* Carousel Header */
+    .header-carousel.owl-carousel .owl-nav .owl-prev,
+    .header-carousel.owl-carousel .owl-nav .owl-next {
+        width: 40px;
+        height: 40px;
+        top: 86%;
+    }
+    
+    .header-carousel.owl-carousel .owl-nav .owl-prev {
+        right: 85px;
+    }
+    
+    .header-carousel.owl-carousel .owl-nav .owl-next {
+        right: 30px;
+    }
+    
+    /* Carousel Banner */
+    .carousel .carousel-banner {
+        padding: 20px;
+    }
+    
+    .carousel .carousel-banner-offer {
+        top: 15px;
+        left: 15px;
+    }
+    
+    /* Product Items */
+    .product .product-item .product-item-inner .product-item-inner-item .product-new,
+    .product .product-item .product-item-inner .product-item-inner-item .product-sale {
+        width: 50px;
+        height: 50px;
+        top: 15px;
+        right: 15px;
+        font-size: 13px;
+    }
+    
+    .product .product-item:hover .product-item-add {
+        margin-bottom: -110px;
+    }
+    
+    .product .product-item .product-item-add .btn {
+        padding: 10px 18px !important;
+        font-size: 14px;
+    }
+    
+    /* ProductList Carousel */
+    .productList .productList-carousel {
+        height: auto !important;
+    }
+    
+    .productList .productList-carousel .productImg-carousel.productList-item .productImg-item {
+        margin-bottom: 90px;
+    }
+    
+    .productList .productList-carousel .owl-nav .owl-prev,
+    .productList .productList-carousel .owl-nav .owl-next {
+        padding: 8px 25px;
+        font-size: 14px;
+    }
+    
+    /* Products Mini */
+    .products .products-mini .products-mini-item .products-mini-img {
+        min-height: 140px;
+    }
+    
+    .products .products-mini .products-mini-item:hover .products-mini-add {
+        margin-bottom: -80px;
+    }
+    
+    .products .products-mini .products-mini-add .btn {
+        padding: 10px 20px !important;
+        font-size: 14px;
+    }
+    
+    /* Single Product */
+    .single-product .single-carousel .owl-dots .owl-dot img {
+        width: 50px;
+        height: 50px;
+        margin: 8px;
+    }
+    
+    .single-product .single-carousel .owl-dots .owl-dot.active img {
+        width: 65px;
+        height: 65px;
+    }
+    
+    /* Related Product */
+    .related-product .related-carousel .related-item {
+        margin-bottom: 110px;
+    }
+    
+    .related-product .related-carousel .related-item:hover .related-item-add {
+        margin-bottom: -110px;
+    }
+    
+    .related-product .owl-nav .owl-prev,
+    .related-product .owl-nav .owl-next {
+        padding: 8px 25px;
+        font-size: 14px;
+    }
+    
+    /* Footer */
+    .footer .footer-item {
+        margin-bottom: 30px;
+    }
+    
+    .footer .rounded-circle[style*="width: 70px"] {
+        width: 60px !important;
+        height: 60px !important;
+    }
+    
+    .footer .rounded-circle i.fa-2x {
+        font-size: 1.5rem !important;
+    }
+
+/* Medium Devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* Navbar adjustments */
+    .navbar-nav {
+        text-align: center;
+    }
+    
+    .nav-bar .navbar .navbar-nav .nav-link {
+        padding: 14px 15px;
+        font-size: 16px;
+    }
+    
+    /* Carousel */
+    .carousel-content h1 {
+        font-size: 32px !important;
+    }
+    
+    /* Carousel Header Navigation */
+    .header-carousel.owl-carousel .owl-nav .owl-prev,
+    .header-carousel.owl-carousel .owl-nav .owl-next {
+        width: 45px;
+        height: 45px;
+        top: 87%;
+    }
+    
+    .header-carousel.owl-carousel .owl-nav .owl-prev {
+        right: 110px;
+    }
+    
+    .header-carousel.owl-carousel .owl-nav .owl-next {
+        right: 50px;
+    }
+    
+    /* Carousel Banner */
+    .carousel .carousel-banner {
+        padding: 25px;
+    }
+    
+    /* Services - 3 columns look better */
+    .container-fluid.px-0 .col-md-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    
+    /* Product items - maintain spacing */
+    .product-item {
+        margin-bottom: 20px;
+    }
+    
+    .product .product-item .product-item-inner .product-item-inner-item .product-new,
+    .product .product-item .product-item-inner .product-item-inner-item .product-sale {
+        width: 55px;
+        height: 55px;
+        top: 18px;
+        right: 18px;
+    }
+    
+    .product .product-item:hover .product-item-add {
+        margin-bottom: -120px;
+    }
+    
+    /* Products mini - better alignment */
+    .products-mini-item .btn {
+        padding: 10px 20px !important;
+    }
+    
+    .products .products-mini .products-mini-item .products-mini-img {
+        min-height: 160px;
+    }
+    
+    .products .products-mini .products-mini-item:hover .products-mini-add {
+        margin-bottom: -78px;
+    }
+    
+    /* ProductList Carousel */
+    .productList .productList-carousel {
+        height: 225px !important;
+    }
+    
+    .productList .productList-carousel .productImg-carousel.productList-item .productImg-item {
+        margin-bottom: 80px;
+    }
+    
+    .productList .productList-carousel .owl-nav .owl-prev,
+    .productList .productList-carousel .owl-nav .owl-next {
+        padding: 8px 30px;
+    }
+    
+    /* Single Product */
+    .single-product .single-carousel .owl-dots .owl-dot img {
+        width: 55px;
+        height: 55px;
+        margin: 10px;
+    }
+    
+    .single-product .single-carousel .owl-dots .owl-dot.active img {
+        width: 70px;
+        height: 70px;
+    }
+    
+    /* Related Product */
+    .related-product .related-carousel .related-item {
+        margin-bottom: 120px;
+    }
+    
+    .related-product .related-carousel .related-item:hover .related-item-add {
+        margin-bottom: -120px;
+    }
+    
+    .related-product .owl-nav .owl-prev,
+    .related-product .owl-nav .owl-next {
+        padding: 8px 30px;
+    }
+    
+    /* Product Banner - Tablet specific */
+    .container-fluid.py-5 .position-relative {
+        min-height: 300px;
+    }
+    
+    .container-fluid.py-5 img {
+        min-height: 300px;
+    }
+    
+    .container-fluid.py-5 .display-5 {
+        font-size: 28px !important;
+    }
+    
+    .container-fluid.py-5 .display-2 {
+        font-size: 48px !important;
+    }
+    
+    .container-fluid.py-5 .fs-4 {
+        font-size: 20px !important;
+    }
+    
+    /* Footer */
+    .footer .footer-item {
+        margin-bottom: 25px;
+    }
+}
+
+/* Large Devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Fine-tune product grid spacing */
+    .product-item .h4 {
+        font-size: 18px;
+    }
+    
+    /* Carousel adjustments */
+    .carousel-content h1 {
+        font-size: 36px !important;
+    }
+    
+    /* Carousel Header Navigation */
+    .header-carousel.owl-carousel .owl-nav .owl-prev {
+        right: 120px;
+    }
+    
+    .header-carousel.owl-carousel .owl-nav .owl-next {
+        right: 55px;
+    }
+    
+    /* Product Items */
+    .product .product-item:hover .product-item-add {
+        margin-bottom: -124px;
+    }
+    
+    /* Products Mini */
+    .products .products-mini .products-mini-item .products-mini-img {
+        min-height: 180px;
+    }
+    
+    .products .products-mini .products-mini-item:hover .products-mini-add {
+        margin-bottom: -75px;
+    }
+    
+    /* ProductList Carousel */
+    .productList .productList-carousel {
+        height: 215px !important;
+    }
+    
+    .productList .productList-carousel .productImg-carousel.productList-item .productImg-item {
+        margin-bottom: 75px;
+    }
+    
+    .productList .productList-carousel .owl-nav .owl-prev,
+    .productList .productList-carousel .owl-nav .owl-next {
+        padding: 5px 35px;
+    }
+    
+    /* Single Product */
+    .single-product .single-carousel .owl-dots .owl-dot img {
+        width: 58px;
+        height: 58px;
+        margin: 12px;
+    }
+    
+    .single-product .single-carousel .owl-dots .owl-dot.active img {
+        width: 75px;
+        height: 75px;
+    }
+    
+    /* Related Product */
+    .related-product .related-carousel .related-item {
+        margin-bottom: 125px;
+    }
+    
+    .related-product .related-carousel .related-item:hover .related-item-add {
+        margin-bottom: -125px;
+    }
+    
+    .related-product .owl-nav .owl-prev,
+    .related-product .owl-nav .owl-next {
+        padding: 5px 35px;
+    }
+    
+    /* Product Banner - Desktop */
+    .container-fluid.py-5 .position-relative {
+        min-height: 350px;
+    }
+    
+    .container-fluid.py-5 img {
+        min-height: 350px;
+    }
+    
+    .container-fluid.py-5 .display-5 {
+        font-size: 2.5rem !important;
+    }
+    
+    .container-fluid.py-5 .display-2 {
+        font-size: 3.5rem !important;
+    }
+}
+
+/* Extra Large Devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* Maintain optimal spacing */
+    .container {
+        max-width: 1140px;
+    }
+    
+    /* Carousel Header Navigation - Full size */
+    .header-carousel.owl-carousel .owl-nav .owl-prev {
+        right: 130px;
+    }
+    
+    .header-carousel.owl-carousel .owl-nav .owl-next {
+        right: 60px;
+    }
+    
+    /* Product Items - Full size */
+    .product .product-item:hover .product-item-add {
+        margin-bottom: -124px;
+    }
+    
+    /* Products Mini - Full size */
+    .products .products-mini .products-mini-item .products-mini-img {
+        min-height: 200px;
+    }
+    
+    .products .products-mini .products-mini-item:hover .products-mini-add {
+        margin-bottom: -75px;
+    }
+    
+    /* ProductList Carousel - Full size */
+    .productList .productList-carousel {
+        height: 215px !important;
+    }
+    
+    .productList .productList-carousel .productImg-carousel.productList-item .productImg-item {
+        margin-bottom: 75px;
+    }
+    
+    .productList .productList-carousel .owl-nav .owl-prev,
+    .productList .productList-carousel .owl-nav .owl-next {
+        padding: 5px 40px;
+    }
+    
+    /* Single Product - Full size */
+    .single-product .single-carousel .owl-dots {
+        height: 120px;
+    }
+    
+    .single-product .single-carousel .owl-dots .owl-dot img {
+        width: 60px;
+        height: 60px;
+        margin-right: 15px;
+    }
+    
+    .single-product .single-carousel .owl-dots .owl-dot.active img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    /* Related Product - Full size */
+    .related-product .related-carousel .related-item {
+        margin-bottom: 125px;
+    }
+    
+    .related-product .related-carousel .related-item:hover .related-item-add {
+        margin-bottom: -125px;
+    }
+    
+    .related-product .owl-nav .owl-prev,
+    .related-product .owl-nav .owl-next {
+        padding: 5px 40px;
+    }
+    
+    /* Product Banner - Large Desktop */
+    .container-fluid.py-5 .position-relative {
+        min-height: 400px;
+    }
+    
+    .container-fluid.py-5 img {
+        min-height: 400px;
+    }
+    
+    .container-fluid.py-5 .display-5 {
+        font-size: 3rem !important;
+    }
+    
+    .container-fluid.py-5 .display-2 {
+        font-size: 4rem !important;
+    }
+    
+    .container-fluid.py-5 .fs-4 {
+        font-size: 1.5rem !important;
+    }
+}
+
+/* ===================================
+   GENERAL RESPONSIVE IMPROVEMENTS
+   =================================== */
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Better button responsiveness */
+.btn {
+    white-space: nowrap;
+}
+
+/* Flexbox fixes for product items */
+.product-item-add {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.product-item-add .d-flex {
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Products mini add section improvements */
+.products-mini-add {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Ensure proper spacing in product grids */
+.row.g-4 > [class*="col-"] {
+    margin-bottom: 1.5rem;
+}
+
+/* Better alignment for service icons */
+.d-inline-flex.align-items-center,
+.d-flex.align-items-center {
+    align-items: center !important;
+}
+
+/* Responsive tables if any */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Better form controls on mobile */
+@media (max-width: 767.98px) {
+    .form-control,
+    .form-select,
+    .btn {
+        font-size: 14px;
+        padding: 12px 16px;
+    }
+}
+
+/* Product hover effects - disable on touch devices */
+@media (hover: none) {
+    .product-details {
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+    
+    .product-item-add {
+        max-height: none !important;
+        opacity: 1 !important;
+    }
+}
+
+/* Landscape orientation fixes */
+@media (max-width: 767.98px) and (orientation: landscape) {
+    .carousel-content h1 {
+        font-size: 20px !important;
+    }
+    
+    .carousel-content p {
+        display: none;
+    }
+    
+    .vh-100 {
+        height: auto !important;
+        min-height: 100vh;
+    }
+    
+    /* Carousel Navigation - Landscape mobile */
+    .header-carousel.owl-carousel .owl-nav .owl-prev,
+    .header-carousel.owl-carousel .owl-nav .owl-next {
+        top: 80%;
+    }
+    
+    /* Carousel Banner - Landscape mobile */
+    .carousel .carousel-banner {
+        padding: 10px;
+    }
+    
+    .carousel .carousel-banner a {
+        font-size: 12px;
+    }
+    
+    /* Product items - Landscape mobile */
+    .product .product-item .product-item-inner .product-item-inner-item .product-new,
+    .product .product-item .product-item-inner .product-item-inner-item .product-sale {
+        width: 40px;
+        height: 40px;
+        font-size: 11px;
+    }
+    
+    /* Footer - Landscape mobile */
+    .footer .rounded-circle[style*="width: 70px"] {
+        width: 45px !important;
+        height: 45px !important;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    /* Product hover effects - Show on touch */
+    .product-details {
+        opacity: 0.8 !important;
+        visibility: visible !important;
+    }
+    
+    .product-item-add {
+        opacity: 0.95 !important;
+    }
+    
+    .products-mini-add {
+        opacity: 0.95 !important;
+    }
+    
+    .related-item-add {
+        opacity: 0.95 !important;
+    }
+    
+    /* Carousel navigation - Larger touch targets */
+    .owl-nav button {
+        min-width: 44px !important;
+        min-height: 44px !important;
+    }
+    
+    /* Better touch button sizes */
+    .btn-sm-square {
+        min-width: 40px;
+        min-height: 40px;
+    }
+    
+    .btn-md-square {
+        min-width: 44px;
+        min-height: 44px;
+    }
+}
+
+/* High DPI / Retina displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Sharper borders and icons */
+    .border {
+        border-width: 0.5px !important;
+    }
+    
+    /* Better icon rendering */
+    .fa, .fas, .far, .fab {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* Print styles */
+@media print {
+    .navbar,
+    .footer,
+    .back-to-top,
+    .owl-nav,
+    .owl-dots,
+    .btn {
+        display: none !important;
+    }
+    
+    .product-item-add,
+    .products-mini-add,
+    .related-item-add {
+        display: none !important;
+    }
+    
+    .container-fluid,
+    .container {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+    }
+}
+
+/* ===================================
+   ADDITIONAL UTILITY FIXES
+   =================================== */
+
+/* Ensure proper image loading */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Better owl carousel responsive behavior */
+.owl-carousel {
+    display: block;
+    width: 100%;
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+}
+
+/* Fix for Bootstrap grid issues */
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.row > [class*="col-"] {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Better text wrapping */
+h1, h2, h3, h4, h5, h6 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Prevent horizontal scroll */
+body {
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    overflow-x: hidden;
+}
+
+/* Better form control responsiveness */
+.form-control,
+.form-select {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Fix dropdown menu on mobile */
+@media (max-width: 991.98px) {
+    .dropdown-menu {
+        position: static !important;
+        transform: none !important;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+    }
+    
+    .dropdown-item {
+        padding: 10px 20px;
+    }
+}
+
+/* Better spacing for small screens */
+@media (max-width: 575.98px) {
+    .py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    
+    .py-4 {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+    
+    .mb-5 {
+        margin-bottom: 2rem !important;
+    }
+    
+    .mb-4 {
+        margin-bottom: 1.5rem !important;
+    }
+}
+
+/* Fix for position absolute elements on small screens */
+@media (max-width: 767.98px) {
+    .position-absolute {
+        position: relative !important;
+    }
+    
+    /* Except for specific carousel elements */
+    .carousel .position-absolute,
+    .header-carousel .position-absolute,
+    .owl-nav .position-absolute,
+    .product-item .position-absolute {
+        position: absolute !important;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Better focus states for accessibility */
+a:focus,
+button:focus,
+.btn:focus,
+.form-control:focus {
+    outline: 2px solid var(--bs-primary);
+    outline-offset: 2px;
+}
+
+/* Loading spinner responsiveness */
+#spinner {
+    width: 100vw !important;
+    height: 100vh !important;
+}
+
+#spinner .spinner-border {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+@media (max-width: 575.98px) {
+    #spinner .spinner-border {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+}
