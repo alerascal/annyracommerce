@@ -3,125 +3,7 @@
 @section('title', 'Home')
 
 @section('content')
-    <!-- Navbar & Hero Start -->
-    <div class="container-fluid nav-bar p-0">
-        <div class="row gx-0 bg-primary px-5 align-items-center">
-            <div class="col-lg-3 d-none d-lg-block">
-                <nav class="navbar navbar-light position-relative" style="width: 250px;">
-                    <button class="navbar-toggler border-0 fs-4 w-100 px-0 text-start" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#allCat">
-                        <h4 class="m-0"><i class="fa fa-bars me-2"></i>All Categories</h4>
-                    </button>
-                    <div class="collapse navbar-collapse rounded-bottom" id="allCat">
-                        <div class="navbar-nav ms-auto py-0">
-                            <ul class="list-unstyled categories-bars">
-                                <li>
-                                    <div class="categories-bars-item">
-                                        <a href="#">Accessories</a>
-                                        <span>(3)</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="categories-bars-item">
-                                        <a href="#">Electronics & Computer</a>
-                                        <span>(5)</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="categories-bars-item">
-                                        <a href="#">Laptops & Desktops</a>
-                                        <span>(2)</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="categories-bars-item">
-                                        <a href="#">Mobiles & Tablets</a>
-                                        <span>(8)</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="categories-bars-item">
-                                        <a href="#">SmartPhone & Smart TV</a>
-                                        <span>(5)</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-            <div class="col-12 col-lg-9">
-                <nav class="navbar navbar-expand-lg navbar-light bg-primary ">
-                    <a href="" class="navbar-brand d-block d-lg-none">
-                        <h1 class="display-5 text-secondary m-0"><i
-                                class="fas fa-shopping-bag text-white me-2"></i>Electro</h1>
-                        <!-- <img src="{{ asset('frontend/img/logo.png') }}" alt="Logo"> -->
-                    </a>
-                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarCollapse">
-                        <span class="fa fa-bars fa-1x"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <div class="navbar-nav ms-auto py-0">
-                            <a href="index.html" class="nav-item nav-link active">Home</a>
-                            <a href="shop.html" class="nav-item nav-link">Shop</a>
-                            <a href="single.html" class="nav-item nav-link">Single Page</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                                <div class="dropdown-menu m-0">
-                                    <a href="bestseller.html" class="dropdown-item">Bestseller</a>
-                                    <a href="cart.html" class="dropdown-item">Cart Page</a>
-                                    <a href="cheackout.html" class="dropdown-item">Cheackout</a>
-                                    <a href="404.html" class="dropdown-item">404 Page</a>
-                                </div>
-                            </div>
-                            <a href="contact.html" class="nav-item nav-link me-2">Contact</a>
-                            <div class="nav-item dropdown d-block d-lg-none mb-3">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">All Category</a>
-                                <div class="dropdown-menu m-0">
-                                    <ul class="list-unstyled categories-bars">
-                                        <li>
-                                            <div class="categories-bars-item">
-                                                <a href="#">Accessories</a>
-                                                <span>(3)</span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="categories-bars-item">
-                                                <a href="#">Electronics & Computer</a>
-                                                <span>(5)</span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="categories-bars-item">
-                                                <a href="#">Laptops & Desktops</a>
-                                                <span>(2)</span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="categories-bars-item">
-                                                <a href="#">Mobiles & Tablets</a>
-                                                <span>(8)</span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="categories-bars-item">
-                                                <a href="#">SmartPhone & Smart TV</a>
-                                                <span>(5)</span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="" class="btn btn-secondary rounded-pill py-2 px-4 px-lg-3 mb-3 mb-md-3 mb-lg-0"><i
-                                class="fa fa-mobile-alt me-2"></i> +0123 456 7890</a>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </div>
-    <!-- Navbar & Hero End -->
+  
 
    <!-- Carousel Start -->
 <div class="container-fluid carousel bg-light px-0">
@@ -786,7 +668,7 @@
                                 <div class="product-item rounded wow fadeInUp" data-wow-delay="0.3s">
                                     <div class="product-item-inner border rounded">
                                         <div class="product-item-inner-item">
-                                            <img src="{{asset('frontend/frimg/product-4.png" class="img-fluid w-100 rounded-top"
+                                            <img src="{{ asset('frontend/product-4.png' )}}" class="img-fluid w-100 rounded-top"
                                                 alt="Image">
                                             <div class="product-sale">sale</div>
                                             <div class="product-details">
@@ -831,7 +713,7 @@
                                 <div class="product-item rounded wow fadeInUp" data-wow-delay="0.5s">
                                     <div class="product-item-inner border rounded">
                                         <div class="product-item-inner-item">
-                                            <img src="{{asset('frontend/frimg/product-5.png" class="img-fluid w-100 rounded-top"
+                                            <img src="{{ asset('frontend/product-5.png' )}}" class="img-fluid w-100 rounded-top"
                                                 alt="Image">
                                             <div class="product-details">
                                                 <a href="#"><i class="fa fa-eye fa-1x"></i></a>
@@ -875,7 +757,7 @@
                                 <div class="product-item rounded wow fadeInUp" data-wow-delay="0.7s">
                                     <div class="product-item-inner border rounded">
                                         <div class="product-item-inner-item">
-                                            <img src="{{asset('frontend/frimg/product-6.png" class="img-fluid w-100 rounded-top"
+                                            <img src="{{ asset('frontend/product-6.png' )}}" class="img-fluid w-100 rounded-top"
                                                 alt="Image">
                                             <div class="product-new">New</div>
                                             <div class="product-details">
@@ -920,7 +802,7 @@
                                 <div class="product-item rounded wow fadeInUp" data-wow-delay="0.1s">
                                     <div class="product-item-inner border rounded">
                                         <div class="product-item-inner-item">
-                                            <img src="{{asset('frontend/frimg/product-7.png" class="img-fluid w-100 rounded-top"
+                                            <img src="{{asset('frontend/product-7.png' )}}" class="img-fluid w-100 rounded-top"
                                                 alt="Image">
                                             <div class="product-sale">Sale</div>
                                             <div class="product-details">
@@ -965,7 +847,7 @@
                                 <div class="product-item rounded wow fadeInUp" data-wow-delay="0.3s">
                                     <div class="product-item-inner border rounded">
                                         <div class="product-item-inner-item">
-                                            <img src="{{asset('frontend/frimg/product-8.png" class="img-fluid w-100 rounded-top"
+                                            <img src="{{ asset('frontend/product-8.png' )}}" class="img-fluid w-100 rounded-top"
                                                 alt="Image">
                                             <div class="product-details">
                                                 <a href="#"><i class="fa fa-eye fa-1x"></i></a>
@@ -1009,7 +891,7 @@
                                 <div class="product-item rounded wow fadeInUp" data-wow-delay="0.5s">
                                     <div class="product-item-inner border rounded">
                                         <div class="product-item-inner-item">
-                                            <img src="{{asset('frontend/frimg/product-9.png" class="img-fluid w-100 rounded-top"
+                                            <img src="{{ asset('frontend/product-9.png' )}}" class="img-fluid w-100 rounded-top"
                                                 alt="Image">
                                             <div class="product-new">New</div>
                                             <div class="product-details">
@@ -1054,7 +936,7 @@
                                 <div class="product-item rounded wow fadeInUp" data-wow-delay="0.7s">
                                     <div class="product-item-inner border rounded">
                                         <div class="product-item-inner-item">
-                                            <img src="{{asset('frontend/frimg/product-10.png" class="img-fluid w-100 rounded-top" alt="">
+                                            <img src="{{ asset('frontend/product-10.png' )}}" class="img-fluid w-100 rounded-top" alt="">
                                             <div class="product-sale">Sale</div>
                                             <div class="product-details">
                                                 <a href="#"><i class="fa fa-eye fa-1x"></i></a>
@@ -1102,7 +984,7 @@
                                 <div class="product-item rounded wow fadeInUp" data-wow-delay="0.1s">
                                     <div class="product-item-inner border rounded">
                                         <div class="product-item-inner-item">
-                                            <img src="{{asset('frontend/frimg/product-3.png" class="img-fluid rounded-top" alt="">
+                                            <img src="{{ asset('frontend/product-3.png' )}}" class="img-fluid rounded-top" alt="">
                                             <div class="product-new">New</div>
                                             <div class="product-details">
                                                 <a href="#"><i class="fa fa-eye fa-1x"></i></a>
@@ -1146,7 +1028,7 @@
                                 <div class="product-item rounded wow fadeInUp" data-wow-delay="0.3s">
                                     <div class="product-item-inner border rounded">
                                         <div class="product-item-inner-item">
-                                            <img src="{{asset('frontend/frimg/product-4.png" class="img-fluid w-100 rounded-top" alt="">
+                                            <img src="{{ asset('frontend/product-4.png' )}}" class="img-fluid w-100 rounded-top" alt="">
                                             <div class="product-new">New</div>
                                             <div class="product-details">
                                                 <a href="#"><i class="fa fa-eye fa-1x"></i></a>
@@ -1190,7 +1072,7 @@
                                 <div class="product-item rounded wow fadeInUp" data-wow-delay="0.5s">
                                     <div class="product-item-inner border rounded">
                                         <div class="product-item-inner-item">
-                                            <img src="{{asset('frontend/frimg/product-5.png" class="img-fluid w-100 rounded-top" alt="">
+                                            <img src="{{ asset('frontend/product-5.png' )}}" class="img-fluid w-100 rounded-top" alt="">
                                             <div class="product-new">New</div>
                                             <div class="product-details">
                                                 <a href="#"><i class="fa fa-eye fa-1x"></i></a>
@@ -1234,7 +1116,7 @@
                                 <div class="product-item rounded wow fadeInUp" data-wow-delay="0.7s">
                                     <div class="product-item-inner border rounded">
                                         <div class="product-item-inner-item">
-                                            <img src="{{asset('frontend/frimg/product-6.png" class="img-fluid w-100 rounded-top"
+                                            <img src="{{ asset('frontend/product-6.png' )}}" class="img-fluid w-100 rounded-top"
                                                 alt="Image">
                                             <div class="product-new">New</div>
                                             <div class="product-details">
@@ -1283,7 +1165,7 @@
                                 <div class="product-item rounded wow fadeInUp" data-wow-delay="0.1s">
                                     <div class="product-item-inner border rounded">
                                         <div class="product-item-inner-item">
-                                            <img src="{{asset('frontend/frimg/product-9.png" class="img-fluid w-100 rounded-top" alt="">
+                                            <img src="{{ asset('frontend/product-9.png' )}}" class="img-fluid w-100 rounded-top" alt="">
                                             <div class="product-details">
                                                 <a href="#"><i class="fa fa-eye fa-1x"></i></a>
                                             </div>
@@ -1326,7 +1208,7 @@
                                 <div class="product-item rounded wow fadeInUp" data-wow-delay="0.3s">
                                     <div class="product-item-inner border rounded">
                                         <div class="product-item-inner-item">
-                                            <img src="{{asset('frontend/frimg/product-10.png" class="img-fluid w-100 rounded-top"
+                                            <img src="{{ asset('frontend/product-10.png' )}}" class="img-fluid w-100 rounded-top"
                                                 alt="Image">
                                             <div class="product-details">
                                                 <a href="#"><i class="fa fa-eye fa-1x"></i></a>
@@ -1370,7 +1252,7 @@
                                 <div class="product-item rounded wow fadeInUp" data-wow-delay="0.5s">
                                     <div class="product-item-inner border rounded">
                                         <div class="product-item-inner-item">
-                                            <img src="{{asset('frontend/frimg/product-11.png" class="img-fluid w-100 rounded-top"
+                                            <img src="{{ asset('frontend/product-11.png' )}}" class="img-fluid w-100 rounded-top"
                                                 alt="Image">
                                             <div class="product-details">
                                                 <a href="#"><i class="fa fa-eye fa-1x"></i></a>
@@ -1414,7 +1296,7 @@
                                 <div class="product-item rounded wow fadeInUp" data-wow-delay="0.7s">
                                     <div class="product-item-inner border rounded">
                                         <div class="product-item-inner-item">
-                                            <img src="{{asset('frontend/frimg/product-12.png" class="img-fluid w-100 rounded-top"
+                                            <img src="{{ asset('frontend/product-12.png' )}}" class="img-fluid w-100 rounded-top"
                                                 alt="Image">
                                             <div class="product-details">
                                                 <a href="#"><i class="fa fa-eye fa-1x"></i></a>
@@ -1462,7 +1344,7 @@
                                 <div class="product-item rounded wow fadeInUp" data-wow-delay="0.1s">
                                     <div class="product-item-inner border rounded">
                                         <div class="product-item-inner-item">
-                                            <img src="{{asset('frontend/frimg/product-14.png" class="img-fluid w-100 rounded-top"
+                                            <img src="{{ asset('frontend/product-14.png' )}}" class="img-fluid w-100 rounded-top"
                                                 alt="Image">
                                             <div class="product-details">
                                                 <a href="#"><i class="fa fa-eye fa-1x"></i></a>
@@ -1506,7 +1388,7 @@
                                 <div class="product-item rounded wow fadeInUp" data-wow-delay="0.3s">
                                     <div class="product-item-inner border rounded">
                                         <div class="product-item-inner-item">
-                                            <img src="{{asset('frontend/frimg/product-15.png" class="img-fluid w-100 rounded-top"
+                                            <img src="{{ asset('frontend/product-15.png' )}}" class="img-fluid w-100 rounded-top"
                                                 alt="Image">
                                             <div class="product-details">
                                                 <a href="#"><i class="fa fa-eye fa-1x"></i></a>
@@ -1550,7 +1432,7 @@
                                 <div class="product-item rounded wow fadeInUp" data-wow-delay="0.5s">
                                     <div class="product-item-inner border rounded">
                                         <div class="product-item-inner-item">
-                                            <img src="{{asset('frontend/frimg/product-17.png" class="img-fluid w-100 rounded-top"
+                                            <img src="{{ asset('frontend/product-17.png ')}}" class="img-fluid w-100 rounded-top"
                                                 alt="Image">
                                             <div class="product-details">
                                                 <a href="#"><i class="fa fa-eye fa-1x"></i></a>
@@ -1594,7 +1476,7 @@
                                 <div class="product-item rounded wow fadeInUp" data-wow-delay="0.7s">
                                     <div class="product-item-inner border rounded">
                                         <div class="product-item-inner-item">
-                                            <img src="{{asset('frontend/frimg/product-16.png" class="img-fluid w-100 rounded-top"
+                                            <img src="{{ asset('frontend/product-16.png' )}}" class="img-fluid w-100 rounded-top"
                                                 alt="Image">
                                             <div class="product-details">
                                                 <a href="#"><i class="fa fa-eye fa-1x"></i></a>
@@ -1649,7 +1531,7 @@
                 <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
                     <a href="#">
                         <div class="bg-primary rounded position-relative">
-                            <img src="{{asset('frontend/frimg/product-banner.jpg" class="img-fluid w-100 rounded" alt="">
+                            <img src="{{ asset('frontend/product-banner.jpg' )}}" class="img-fluid w-100 rounded" alt="">
                             <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center rounded p-4"
                                 style="background: rgba(255, 255, 255, 0.5);">
                                 <h3 class="display-5 text-primary">EOS Rebel <br> <span>T7i Kit</span></h3>
@@ -1665,7 +1547,7 @@
                 <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
                     <a href="#">
                         <div class="text-center bg-primary rounded position-relative">
-                            <img src="{{asset('frontend/frimg/product-banner-2.jpg" class="img-fluid w-100" alt="">
+                            <img src="{{ asset('frontend/product-banner-2.jpg' )}}" class="img-fluid w-100" alt="">
                             <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center rounded p-4"
                                 style="background: rgba(242, 139, 0, 0.5);">
                                 <h2 class="display-2 text-secondary">SALE</h2>
@@ -1695,7 +1577,7 @@
                         <div class="row g-0">
                             <div class="col-5">
                                 <div class="products-mini-img border-end h-100">
-                                    <img src="{{asset('frontend/frimg/product-4.png" class="img-fluid w-100 h-100" alt="Image">
+                                    <img src="{{ asset('frontend/product-4.png' )}}" class="img-fluid w-100 h-100" alt="Image">
                                     <div class="products-mini-icon rounded-circle bg-primary">
                                         <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
                                     </div>
@@ -1728,7 +1610,7 @@
                         <div class="row g-0">
                             <div class="col-5">
                                 <div class="products-mini-img border-end h-100">
-                                    <img src="{{asset('frontend/frimg/product-4.png" class="img-fluid w-100 h-100" alt="Image">
+                                    <img src="{{ asset('frontend/product-4.png' )}}" class="img-fluid w-100 h-100" alt="Image">
                                     <div class="products-mini-icon rounded-circle bg-primary">
                                         <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
                                     </div>
@@ -1761,7 +1643,7 @@
                         <div class="row g-0">
                             <div class="col-5">
                                 <div class="products-mini-img border-end h-100">
-                                    <img src="{{asset('frontend/frimg/product-6.png" class="img-fluid w-100 h-100" alt="Image">
+                                    <img src="{{ asset('frontend/product-6.png' )}}" class="img-fluid w-100 h-100" alt="Image">
                                     <div class="products-mini-icon rounded-circle bg-primary">
                                         <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
                                     </div>
@@ -1794,141 +1676,7 @@
                         <div class="row g-0">
                             <div class="col-5">
                                 <div class="products-mini-img border-end h-100">
-                                    <img src="{{asset('frontend/frimg/product-7.png" class="img-fluid w-100 h-100" alt="Image">
-                                    <div class="products-mini-icon rounded-circle bg-primary">
-                                        <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-7">
-                                <div class="products-mini-content p-3">
-                                    <a href="#" class="d-block mb-2">SmartPhone</a>
-                                    <a href="#" class="d-block h4">Apple iPad Mini <br> G2356</a>
-                                    <del class="me-2 fs-5">$1,250.00</del>
-                                    <span class="text-primary fs-5">$1,050.00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="products-mini-add border p-3">
-                            <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4"><i
-                                    class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
-                            <div class="d-flex">
-                                <a href="#"
-                                    class="text-primary d-flex align-items-center justify-content-center me-3"><span
-                                        class="rounded-circle btn-sm-square border"><i
-                                            class="fas fa-random"></i></i></a>
-                                <a href="#"
-                                    class="text-primary d-flex align-items-center justify-content-center me-0"><span
-                                        class="rounded-circle btn-sm-square border"><i class="fas fa-heart"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="productImg-carousel owl-carousel productList-item">
-                    <div class="productImg-item products-mini-item border">
-                        <div class="row g-0">
-                            <div class="col-5">
-                                <div class="products-mini-img border-end h-100">
-                                    <img src="{{asset('frontend/frimg/product-8.png" class="img-fluid w-100 h-100" alt="Image">
-                                    <div class="products-mini-icon rounded-circle bg-primary">
-                                        <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-7">
-                                <div class="products-mini-content p-3">
-                                    <a href="#" class="d-block mb-2">SmartPhone</a>
-                                    <a href="#" class="d-block h4">Apple iPad Mini <br> G2356</a>
-                                    <del class="me-2 fs-5">$1,250.00</del>
-                                    <span class="text-primary fs-5">$1,050.00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="products-mini-add border p-3">
-                            <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4"><i
-                                    class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
-                            <div class="d-flex">
-                                <a href="#"
-                                    class="text-primary d-flex align-items-center justify-content-center me-3"><span
-                                        class="rounded-circle btn-sm-square border"><i
-                                            class="fas fa-random"></i></i></a>
-                                <a href="#"
-                                    class="text-primary d-flex align-items-center justify-content-center me-0"><span
-                                        class="rounded-circle btn-sm-square border"><i class="fas fa-heart"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="productImg-item products-mini-item border">
-                        <div class="row g-0">
-                            <div class="col-5">
-                                <div class="products-mini-img border-end h-100">
-                                    <img src="{{asset('frontend/frimg/product-9.png" class="img-fluid w-100 h-100" alt="Image">
-                                    <div class="products-mini-icon rounded-circle bg-primary">
-                                        <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-7">
-                                <div class="products-mini-content p-3">
-                                    <a href="#" class="d-block mb-2">SmartPhone</a>
-                                    <a href="#" class="d-block h4">Apple iPad Mini <br> G2356</a>
-                                    <del class="me-2 fs-5">$1,250.00</del>
-                                    <span class="text-primary fs-5">$1,050.00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="products-mini-add border p-3">
-                            <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4"><i
-                                    class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
-                            <div class="d-flex">
-                                <a href="#"
-                                    class="text-primary d-flex align-items-center justify-content-center me-3"><span
-                                        class="rounded-circle btn-sm-square border"><i
-                                            class="fas fa-random"></i></i></a>
-                                <a href="#"
-                                    class="text-primary d-flex align-items-center justify-content-center me-0"><span
-                                        class="rounded-circle btn-sm-square border"><i class="fas fa-heart"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="productImg-item products-mini-item border">
-                        <div class="row g-0">
-                            <div class="col-5">
-                                <div class="products-mini-img border-end h-100">
-                                    <img src="{{asset('frontend/frimg/product-10.png" class="img-fluid w-100 h-100" alt="Image">
-                                    <div class="products-mini-icon rounded-circle bg-primary">
-                                        <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-7">
-                                <div class="products-mini-content p-3">
-                                    <a href="#" class="d-block mb-2">SmartPhone</a>
-                                    <a href="#" class="d-block h4">Apple iPad Mini <br> G2356</a>
-                                    <del class="me-2 fs-5">$1,250.00</del>
-                                    <span class="text-primary fs-5">$1,050.00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="products-mini-add border p-3">
-                            <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4"><i
-                                    class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
-                            <div class="d-flex">
-                                <a href="#"
-                                    class="text-primary d-flex align-items-center justify-content-center me-3"><span
-                                        class="rounded-circle btn-sm-square border"><i
-                                            class="fas fa-random"></i></i></a>
-                                <a href="#"
-                                    class="text-primary d-flex align-items-center justify-content-center me-0"><span
-                                        class="rounded-circle btn-sm-square border"><i class="fas fa-heart"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="productImg-item products-mini-item border">
-                        <div class="row g-0">
-                            <div class="col-5">
-                                <div class="products-mini-img border-end h-100">
-                                    <img src="{{asset('frontend/frimg/product-11.png" class="img-fluid w-100 h-100" alt="Image">
+                                    <img src="{{ asset('frontend/product-7.png' )}}" class="img-fluid w-100 h-100" alt="Image">
                                     <div class="products-mini-icon rounded-circle bg-primary">
                                         <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
                                     </div>
@@ -1963,7 +1711,7 @@
                         <div class="row g-0">
                             <div class="col-5">
                                 <div class="products-mini-img border-end h-100">
-                                    <img src="{{asset('frontend/frimg/product-12.png" class="img-fluid w-100 h-100" alt="Image">
+                                    <img src="{{ asset('frontend/product-8.png' )}}" class="img-fluid w-100 h-100" alt="Image">
                                     <div class="products-mini-icon rounded-circle bg-primary">
                                         <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
                                     </div>
@@ -1996,7 +1744,7 @@
                         <div class="row g-0">
                             <div class="col-5">
                                 <div class="products-mini-img border-end h-100">
-                                    <img src="{{asset('frontend/frimg/product-13.png" class="img-fluid w-100 h-100" alt="Image">
+                                    <img src="{{ asset('frontend/product-9.png' )}}" class="img-fluid w-100 h-100" alt="Image">
                                     <div class="products-mini-icon rounded-circle bg-primary">
                                         <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
                                     </div>
@@ -2029,7 +1777,7 @@
                         <div class="row g-0">
                             <div class="col-5">
                                 <div class="products-mini-img border-end h-100">
-                                    <img src="{{asset('frontend/frimg/product-14.png" class="img-fluid w-100 h-100" alt="Image">
+                                    <img src="{{ asset('frontend/product-10.png' )}}" class="img-fluid w-100 h-100" alt="Image">
                                     <div class="products-mini-icon rounded-circle bg-primary">
                                         <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
                                     </div>
@@ -2062,7 +1810,7 @@
                         <div class="row g-0">
                             <div class="col-5">
                                 <div class="products-mini-img border-end h-100">
-                                    <img src="{{asset('frontend/frimg/product-15.png" class="img-fluid w-100 h-100" alt="Image">
+                                    <img src="{{ asset('frontend/product-11.png' )}}" class="img-fluid w-100 h-100" alt="Image">
                                     <div class="products-mini-icon rounded-circle bg-primary">
                                         <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
                                     </div>
@@ -2097,7 +1845,7 @@
                         <div class="row g-0">
                             <div class="col-5">
                                 <div class="products-mini-img border-end h-100">
-                                    <img src="{{asset('frontend/frimg/product-16.png" class="img-fluid w-100 h-100" alt="Image">
+                                    <img src="{{ asset('frontend/product-12.png' )}}" class="img-fluid w-100 h-100" alt="Image">
                                     <div class="products-mini-icon rounded-circle bg-primary">
                                         <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
                                     </div>
@@ -2130,7 +1878,7 @@
                         <div class="row g-0">
                             <div class="col-5">
                                 <div class="products-mini-img border-end h-100">
-                                    <img src="{{asset('frontend/frimg/product-17.png" class="img-fluid w-100 h-100" alt="Image">
+                                    <img src="{{ asset('frontend/product-13.png' )}}" class="img-fluid w-100 h-100" alt="Image">
                                     <div class="products-mini-icon rounded-circle bg-primary">
                                         <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
                                     </div>
@@ -2163,7 +1911,141 @@
                         <div class="row g-0">
                             <div class="col-5">
                                 <div class="products-mini-img border-end h-100">
-                                    <img src="{{asset('frontend/frimg/product-3.png" class="img-fluid w-100 h-100" alt="Image">
+                                    <img src="{{ asset('frontend/product-14.png' )}}" class="img-fluid w-100 h-100" alt="Image">
+                                    <div class="products-mini-icon rounded-circle bg-primary">
+                                        <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <div class="products-mini-content p-3">
+                                    <a href="#" class="d-block mb-2">SmartPhone</a>
+                                    <a href="#" class="d-block h4">Apple iPad Mini <br> G2356</a>
+                                    <del class="me-2 fs-5">$1,250.00</del>
+                                    <span class="text-primary fs-5">$1,050.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products-mini-add border p-3">
+                            <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4"><i
+                                    class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                            <div class="d-flex">
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-3"><span
+                                        class="rounded-circle btn-sm-square border"><i
+                                            class="fas fa-random"></i></i></a>
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-0"><span
+                                        class="rounded-circle btn-sm-square border"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productImg-item products-mini-item border">
+                        <div class="row g-0">
+                            <div class="col-5">
+                                <div class="products-mini-img border-end h-100">
+                                    <img src="{{ asset('frontend/product-15.png' )}}" class="img-fluid w-100 h-100" alt="Image">
+                                    <div class="products-mini-icon rounded-circle bg-primary">
+                                        <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <div class="products-mini-content p-3">
+                                    <a href="#" class="d-block mb-2">SmartPhone</a>
+                                    <a href="#" class="d-block h4">Apple iPad Mini <br> G2356</a>
+                                    <del class="me-2 fs-5">$1,250.00</del>
+                                    <span class="text-primary fs-5">$1,050.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products-mini-add border p-3">
+                            <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4"><i
+                                    class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                            <div class="d-flex">
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-3"><span
+                                        class="rounded-circle btn-sm-square border"><i
+                                            class="fas fa-random"></i></i></a>
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-0"><span
+                                        class="rounded-circle btn-sm-square border"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="productImg-carousel owl-carousel productList-item">
+                    <div class="productImg-item products-mini-item border">
+                        <div class="row g-0">
+                            <div class="col-5">
+                                <div class="products-mini-img border-end h-100">
+                                    <img src="{{ asset('frontend/product-16.png' )}}" class="img-fluid w-100 h-100" alt="Image">
+                                    <div class="products-mini-icon rounded-circle bg-primary">
+                                        <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <div class="products-mini-content p-3">
+                                    <a href="#" class="d-block mb-2">SmartPhone</a>
+                                    <a href="#" class="d-block h4">Apple iPad Mini <br> G2356</a>
+                                    <del class="me-2 fs-5">$1,250.00</del>
+                                    <span class="text-primary fs-5">$1,050.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products-mini-add border p-3">
+                            <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4"><i
+                                    class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                            <div class="d-flex">
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-3"><span
+                                        class="rounded-circle btn-sm-square border"><i
+                                            class="fas fa-random"></i></i></a>
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-0"><span
+                                        class="rounded-circle btn-sm-square border"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productImg-item products-mini-item border">
+                        <div class="row g-0">
+                            <div class="col-5">
+                                <div class="products-mini-img border-end h-100">
+                                    <img src="{{ asset('frontend/product-17.png' )}}" class="img-fluid w-100 h-100" alt="Image">
+                                    <div class="products-mini-icon rounded-circle bg-primary">
+                                        <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <div class="products-mini-content p-3">
+                                    <a href="#" class="d-block mb-2">SmartPhone</a>
+                                    <a href="#" class="d-block h4">Apple iPad Mini <br> G2356</a>
+                                    <del class="me-2 fs-5">$1,250.00</del>
+                                    <span class="text-primary fs-5">$1,050.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products-mini-add border p-3">
+                            <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4"><i
+                                    class="fas fa-shopping-cart me-2"></i> Add To Cart</a>
+                            <div class="d-flex">
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-3"><span
+                                        class="rounded-circle btn-sm-square border"><i
+                                            class="fas fa-random"></i></i></a>
+                                <a href="#"
+                                    class="text-primary d-flex align-items-center justify-content-center me-0"><span
+                                        class="rounded-circle btn-sm-square border"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productImg-item products-mini-item border">
+                        <div class="row g-0">
+                            <div class="col-5">
+                                <div class="products-mini-img border-end h-100">
+                                    <img src="{{ asset('frontend/product-3.png' )}}" class="img-fluid w-100 h-100" alt="Image">
                                     <div class="products-mini-icon rounded-circle bg-primary">
                                         <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
                                     </div>
@@ -2214,7 +2096,7 @@
                         <div class="row g-0">
                             <div class="col-5">
                                 <div class="products-mini-img border-end h-100">
-                                    <img src="{{asset('frontend/frimg/product-3.png" class="img-fluid w-100 h-100" alt="Image">
+                                    <img src="{{ asset('frontend/img/product-3.png' )}}" class="img-fluid w-100 h-100" alt="Image">
                                     <div class="products-mini-icon rounded-circle bg-primary">
                                         <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
                                     </div>
@@ -2249,7 +2131,7 @@
                         <div class="row g-0">
                             <div class="col-5">
                                 <div class="products-mini-img border-end h-100">
-                                    <img src="{{asset('frontend/frimg/product-4.png" class="img-fluid w-100 h-100" alt="Image">
+                                    <img src="{{ asset('frontend/product-4.png' )}}" class="img-fluid w-100 h-100" alt="Image">
                                     <div class="products-mini-icon rounded-circle bg-primary">
                                         <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
                                     </div>
@@ -2284,7 +2166,7 @@
                         <div class="row g-0">
                             <div class="col-5">
                                 <div class="products-mini-img border-end h-100">
-                                    <img src="{{asset('frontend/frimg/product-5.png" class="img-fluid w-100 h-100" alt="Image">
+                                    <img src="{{ asset('frontend/product-5.png' )}}" class="img-fluid w-100 h-100" alt="Image">
                                     <div class="products-mini-icon rounded-circle bg-primary">
                                         <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
                                     </div>
@@ -2319,7 +2201,7 @@
                         <div class="row g-0">
                             <div class="col-5">
                                 <div class="products-mini-img border-end h-100">
-                                    <img src="{{asset('frontend/frimg/product-6.png" class="img-fluid w-100 h-100" alt="Image">
+                                    <img src="{{ asset('frontend/product-6.png' )}}" class="img-fluid w-100 h-100" alt="Image">
                                     <div class="products-mini-icon rounded-circle bg-primary">
                                         <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
                                     </div>
@@ -2354,7 +2236,7 @@
                         <div class="row g-0">
                             <div class="col-5">
                                 <div class="products-mini-img border-end h-100">
-                                    <img src="{{asset('frontend/frimg/product-7.png" class="img-fluid w-100 h-100" alt="Image">
+                                    <img src="{{ asset('frontend/product-7.png' )}}" class="img-fluid w-100 h-100" alt="Image">
                                     <div class="products-mini-icon rounded-circle bg-primary">
                                         <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
                                     </div>
@@ -2389,7 +2271,7 @@
                         <div class="row g-0">
                             <div class="col-5">
                                 <div class="products-mini-img border-end h-100">
-                                    <img src="{{asset('frontend/frimg/product-11.png" class="img-fluid w-100 h-100" alt="Image">
+                                    <img src="{{ asset('frontend/product-11.png' )}}" class="img-fluid w-100 h-100" alt="Image">
                                     <div class="products-mini-icon rounded-circle bg-primary">
                                         <a href="#"><i class="fa fa-eye fa-1x text-white"></i></a>
                                     </div>
